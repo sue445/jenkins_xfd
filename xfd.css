@@ -3,6 +3,7 @@
     padding-top: 50px;
     margin-bottom: 10px;
 }
+
 .project_label {
     width: 600px;
     line-height: 100px;
@@ -10,4 +11,16 @@
     margin: auto;
     vertical-align: middle;
     background-color: white;
+}
+
+.success{
+    background-color: green;
+}
+
+.error{
+    background-color: red;
+}
+
+.unknown{
+    background-color: gray;
 }
