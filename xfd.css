@@ -1,0 +1,13 @@
+.project {
+    height: 150px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.project_label {
+    width: 600px;
+    line-height: 100px;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    background-color: white;
+}
