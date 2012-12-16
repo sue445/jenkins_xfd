@@ -12,6 +12,21 @@
 <script type="text/javascript">
     (function($){
         $(document).ready(function(){
+            var job_urls = [
+                "https://sue445.ci.cloudbees.com/job/azusaar/",
+                "https://sue445.ci.cloudbees.com/job/kulib/",
+            ];
+
+            for(var i = 0; i < job_urls.length; i++){
+                var api_url = job_urls[i] + "/api/json";
+                $.ajax({
+                    url: api_url,
+                    dataType: "jsonp",
+                    jsonp: "jsonp"
+                }).then(function(result){
+                    console.log(result);
+                });
+            }
         });
     })(jQuery);
 </script>
