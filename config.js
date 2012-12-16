@@ -1,7 +1,6 @@
 var config = {
     job_urls : [
-        "https://sue445.ci.cloudbees.com/job/azusaar/",
-        "https://sue445.ci.cloudbees.com/job/kulib/",
+        "http://YOUR-JENKINS-ROOT/job/JOB-NAME/",
     ],
     reload_seconds : 30
 };
