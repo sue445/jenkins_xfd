@@ -1,6 +1,6 @@
 var xfd = (function(){
     // public methods
-    function init(){
+    function display(config){
         for(var i = 0; i < config.job_urls.length; i++){
             var api_url = config.job_urls[i] + "/api/json";
             $.ajax({
@@ -32,7 +32,7 @@ var xfd = (function(){
     }
 
     return {
-        init : init
+        display : display
     };
 
     // private methods
