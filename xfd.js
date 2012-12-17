@@ -2,26 +2,31 @@ var xfd = (function(){
     // public methods
     function display(config){
         for(var i = 0; i < config.job_urls.length; i++){
-            var api_url = config.job_urls[i] + "/api/json";
-            $.ajax({
-                url: api_url,
-                dataType: "jsonp",
-                jsonp: "jsonp"
-            }).then(function(res){
-                    // succcess
-                    var test_result = "unknown";
-                    if(res.color == "blue") test_result = "success";
-                    else if(res.color == "red") test_result = "error";
+            $("#main_contents").append(
+                $("<div/>").addClass("project").attr("id", "project_"+i)
+            );
+        }
 
-                    var label = $("<h1/>").addClass("project_label").text(res.displayName);
+        for(var i = 0; i < config.job_urls.length; i++){
+            (function(id){
+                var api_url = config.job_urls[i] + "/api/json";
+                $.ajax({
+                    url: api_url,
+                    dataType: "jsonp",
+                    jsonp: "jsonp"
+                }).then(function(res){
+                        // succcess
+                        var test_result = "unknown";
+                        if(res.color == "blue") test_result = "success";
+                        else if(res.color == "red") test_result = "error";
 
-                    var project = $("<div/>").addClass("project").addClass(test_result);
-                    project.append(label);
-
-                    $("#main_contents").append(project);
-                }, function(){
-                    // error
-                });
+                        $("#"+id).addClass(test_result).append(
+                            $("<h1/>").addClass("project_label").text(res.displayName)
+                        );
+                    }, function(){
+                        // error
+                    });
+            })("project_"+i);
         }
 
         setTimeout(function(){
