@@ -1,4 +1,4 @@
-# Simple XFD for Jenkins
+# Simple XFD(eXtreme Feedback Device) for Jenkins
 ## Overview
 * Use only Jenkins default API
  * Not use [Websocket Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Websocket+Plugin)
