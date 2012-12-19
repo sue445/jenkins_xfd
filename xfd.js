@@ -19,10 +19,15 @@ var xfd = (function(){
                         var test_result = "unknown";
                         if(res.color == "blue") test_result = "success";
                         else if(res.color == "red") test_result = "error";
+                        else if(res.color == "blue_anime"){
+                            test_result = "build";
+                            blink("#"+id);
+                        }
 
                         $("#"+id).addClass(test_result).append(
                             $("<h1/>").addClass("project_label").text(res.displayName)
                         );
+
                     }, function(){
                         // error
                     });
@@ -50,6 +55,13 @@ var xfd = (function(){
 
     function pad(num){
         return num < 10 ? "0" + num : num;
+    }
+
+    function blink(selector){
+        setInterval(function(){
+            var interval = 800;
+            $(selector).fadeOut(interval,function(){$(this).fadeIn(interval)});
+        },0);
     }
 
 }());
