@@ -13,7 +13,8 @@
 ![Sample XFD](http://sue445.github.com/jenkins_xfd/sample.png)
 
 ## Other great XFDs
-* [unageel/xfd.html](https://github.com/mzp/unageel/blob/master/xfd.html)
+* [mzp/unageel](https://github.com/mzp/unageel/blob/master/xfd.html)
+* [tuo/jenkins-monitor](https://github.com/tuo/jenkins-monitor)
 * Chrome Extension
  * [Hudson Extension](https://chrome.google.com/webstore/detail/hudson-extension/hfncndbfmjmafoodaigpoicpbdfhhgdo)
  * [Jenkins Notifier for Chrome™](https://chrome.google.com/webstore/detail/jenkins-notifier-for-chro/mnjbjjllbclkpnebaddhkoonjelmiekm)
