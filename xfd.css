@@ -14,18 +14,22 @@
     background-color: white;
 }
 
-.success{
+#main_contents .blue{
     background-color: green;
 }
 
-.build{
+#main_contents .blue_anime{
     background-color: green;
 }
 
-.error{
+#main_contents .red{
     background-color: red;
 }
 
-.unknown{
+#main_contents .yellow{
+    background-color: yellow;
+}
+
+#main_contents .unknown{
     background-color: gray;
 }

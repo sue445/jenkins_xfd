@@ -16,15 +16,9 @@ var xfd = (function(){
                     jsonp: "jsonp"
                 }).then(function(res){
                         // succcess
-                        var test_result = "unknown";
-                        if(res.color == "blue") test_result = "success";
-                        else if(res.color == "red") test_result = "error";
-                        else if(res.color == "blue_anime"){
-                            test_result = "build";
-                            blink("#"+id);
-                        }
+                        if(res.color == "blue_anime")   blink("#"+id);
 
-                        $("#"+id).addClass(test_result).append(
+                        $("#"+id).addClass(res.color).append(
                             $("<h1/>").addClass("project_label").text(res.displayName)
                         );
 
