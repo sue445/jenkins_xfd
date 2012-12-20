@@ -5,7 +5,7 @@
 
 ## How to use
 1. download files (`git clone git://github.com/sue445/jenkins_xfd.git` or 'Download as a zip file')
-2. `mv config.js.sample config.js`
+2. `cp config.js.sample config.js`
 3. edit `config.js` with your setting
 4. upload files
 
