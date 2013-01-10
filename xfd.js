@@ -16,7 +16,7 @@ var xfd = (function(){
                     jsonp: "jsonp"
                 }).then(function(res){
                         // succcess
-                        if(res.color == "blue_anime")   blink("#"+id);
+                        if(res.color.match(/_anime$/))   blink("#"+id);
 
                         $("#"+id).addClass(res.color).append(
                             $("<h1/>").addClass("project_label").text(res.displayName)

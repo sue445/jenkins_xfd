@@ -14,18 +14,22 @@
     background-color: white;
 }
 
-#main_contents .blue{
+#main_contents .blue,
+#main_contents .blue_anime {
     background-color: green;
 }
 
-#main_contents .blue_anime{
-    background-color: green;
-}
-
-#main_contents .red{
+#main_contents .red,
+#main_contents .red_anime {
     background-color: red;
 }
 
-#main_contents .yellow{
+#main_contents .yellow,
+#main_contents .yellow_anime {
     background-color: yellow;
+}
+
+#main_contents .grey,
+#main_contents .grey_anime {
+    background-color: gray;
 }
