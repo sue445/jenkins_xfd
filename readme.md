@@ -10,7 +10,7 @@
 4. upload files
 
 ## Sample
-![Sample XFD](http://sue445.github.com/jenkins_xfd/sample.png)
+http://sue445.github.com/jenkins_xfd/
 
 ## Other great XFDs
 * [mzp/unageel](https://github.com/mzp/unageel/blob/master/xfd.html)
