@@ -9,6 +9,17 @@
 3. edit `config.js` with your setting
 4. upload files
 
+## later than 1.502
+set `hudson.model.Api.INSECURE=true` at comand line args
+
+### ex. tomcat7
+`$TOMCAT_DIR/bin/setenv.sh`
+
+```bash
+CATALINA_OPTS='-Dhudson.model.Api.INSECURE=true'
+export CATALINA_OPTS
+```
+
 ## Sample
 http://sue445.github.com/jenkins_xfd/
 
